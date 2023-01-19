@@ -19,7 +19,7 @@ variable "environment" {
   type = string
 }
 
-variable "git_repository_path" {
+variable "git_repository_root_path" {
   type = string
 }
 
