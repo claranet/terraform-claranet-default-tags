@@ -23,6 +23,27 @@ config:
     - exists:
         - .env
 
+.terraform_base:
+  image:
+    name: "hashicorp/terraform:${TERRAFORM_VERSION}"
+    entrypoint: [ "" ]
+
+.terraform:fmt:
+  extends: .terraform_base
+  stage: fmt
+  rules:
+    - if: '$CI_PIPELINE_SOURCE != "schedule"'
+  script:
+    - terraform fmt --check
+
+.terraform:validate:
+  extends: .terraform_base
+  stage: validate
+  rules:
+    - if: '$CI_PIPELINE_SOURCE != "schedule"'
+  script:
+    - terraform init
+    - terraform validate
 
 .terraform:tflint:
   image:
@@ -73,8 +94,16 @@ config:
       allow_failure: true
 
 stages:
+  - fmt
+  - validate
   - lint
   - release
+
+fmt:
+  extends: .terraform:fmt
+
+validate:
+  extends: .terraform:validate
 
 tflint:
   extends: .terraform:tflint
