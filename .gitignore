@@ -1,2 +1,4 @@
 .terraform.lock.hcl
 .terraform/*
+.tfsec/
+node_modules/*
