@@ -20,7 +20,8 @@ variable "environment" {
 }
 
 variable "git_repository_root_path" {
-  type = string
+  default = "."
+  type    = string
 }
 
 variable "git_repository_base_url" {
