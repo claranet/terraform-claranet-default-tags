@@ -48,3 +48,50 @@ provider "aws" {
   }
 }
 ```
+
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1 |
+| <a name="requirement_git"></a> [git](#requirement\_git) | 0.1.3 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_git"></a> [git](#provider\_git) | 0.1.3 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [git_repository.current](https://registry.terraform.io/providers/innovationnorway/git/0.1.3/docs/data-sources/repository) | data source |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_application_stack_name"></a> [application\_stack\_name](#input\_application\_stack\_name) | n/a | `string` | `null` | no |
+| <a name="input_claranet_project_id"></a> [claranet\_project\_id](#input\_claranet\_project\_id) | n/a | `string` | `null` | no |
+| <a name="input_deployed_by"></a> [deployed\_by](#input\_deployed\_by) | n/a | `string` | `"terraform"` | no |
+| <a name="input_environment"></a> [environment](#input\_environment) | n/a | `string` | n/a | yes |
+| <a name="input_git_repository_base_url"></a> [git\_repository\_base\_url](#input\_git\_repository\_base\_url) | n/a | `string` | `"https://git.fr.clara.net"` | no |
+| <a name="input_git_repository_regex"></a> [git\_repository\_regex](#input\_git\_repository\_regex) | n/a | `string` | `"^.*git.fr.clara.net[:/](?P<repository_path>[\\w-/]+).git"` | no |
+| <a name="input_git_repository_root_path"></a> [git\_repository\_root\_path](#input\_git\_repository\_root\_path) | n/a | `string` | n/a | yes |
+| <a name="input_managed_by"></a> [managed\_by](#input\_managed\_by) | n/a | `string` | `"claranet"` | no |
+| <a name="input_owner"></a> [owner](#input\_owner) | n/a | `string` | `null` | no |
+| <a name="input_stack"></a> [stack](#input\_stack) | n/a | `string` | `null` | no |
+| <a name="input_supervised_by"></a> [supervised\_by](#input\_supervised\_by) | n/a | `string` | `"claranet"` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_default_tags"></a> [default\_tags](#output\_default\_tags) | n/a |
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
