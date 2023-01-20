@@ -19,10 +19,6 @@ variable "environment" {
   type = string
 }
 
-variable "git_repository_root_path" {
-  type = string
-}
-
 variable "git_repository_base_url" {
   default = "https://git.fr.clara.net"
   type    = string

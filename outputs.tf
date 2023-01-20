@@ -12,3 +12,11 @@ output "default_tags" {
     supervised_by          = var.supervised_by
   }
 }
+
+output "git_paths" {
+  value = local.git_paths
+}
+
+output "git_path" {
+  value = local.git_path
+}

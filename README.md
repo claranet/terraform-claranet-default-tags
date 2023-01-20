@@ -14,7 +14,6 @@ module "default_tags" {
   source = "git@git.fr.clara.net:claranet/projects/cloud/ccoe/claranet-terraform-default-tags.git?ref=v0.1.0"
 
   environment              = var.environment
-  git_repository_root_path = "../../../.."
 }
 
 provider "aws" {
