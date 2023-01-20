@@ -1,4 +1,5 @@
 variables:
+  TFDOCS_IMAGE: "quay.io/terraform-docs/terraform-docs"
   TFLINT_IMAGE: "ghcr.io/terraform-linters/tflint"
   TFLINT_PLUGIN_DIR: ".tflint.d/plugins"
   TFSEC_ARGS: "."
@@ -23,6 +24,18 @@ config:
     - exists:
         - .env
 
+.terraform:tfdocs:
+  image:
+    ${TFDOCS_IMAGE}:${TFDOCS_VERSION}
+  stage: docs
+  script:
+    - terraform-docs markdown table --output-file README.md --output-template '<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->\n{{ .Content }}\n<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->' .
+    - git diff --exit-code
+  rules:
+    # exclude merge requests
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
+    - if: $CI_COMMIT_REF_NAME && $CI_PIPELINE_SOURCE != "schedule"
 
 .terraform:tflint:
   image:
@@ -74,7 +87,11 @@ config:
 
 stages:
   - lint
+  - docs
   - release
+
+tfdocs:
+  extends: .terraform:tfdocs
 
 tflint:
   extends: .terraform:tflint
