@@ -7,7 +7,7 @@ variable "application_stack_name" {
 
 variable "claranet_project_id" {
   default     = null
-  description = "Project ID as defined in Claranet SynApps database"
+  description = "Project ID as defined in Claranet SynApps CMDB"
   nullable    = true
   type        = string
 }
@@ -19,7 +19,7 @@ variable "deployed_by" {
 }
 
 variable "environment" {
-  description = "Resources' environment"
+  description = "What is the environment of the resources"
   type        = string
 }
 
