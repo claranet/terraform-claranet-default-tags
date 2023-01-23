@@ -1,12 +1,5 @@
 locals {
-  iac_git_url = format(
-    "%s/%s",
-    var.git_repository_base_url,
-    regex(
-      var.git_repository_regex,
-      data.git_remotes.current.remotes["origin"].urls[0]
-    )["repository_path"]
-  )
+  iac_git_url = join(",", [for remote in data.git_remotes.current.remotes : remote.urls[0]])
 
   iac_base_path = trimprefix(
     abspath(path.root),
