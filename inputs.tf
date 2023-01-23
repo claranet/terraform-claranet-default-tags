@@ -1,56 +1,57 @@
 variable "application_stack_name" {
-  default  = null
-  nullable = true
-  type     = string
+  default     = null
+  description = "Application stack name"
+  nullable    = true
+  type        = string
 }
 
 variable "claranet_project_id" {
-  default  = null
-  nullable = true
-  type     = string
+  default     = null
+  description = "Project ID as defined in Claranet SynApps CMDB"
+  nullable    = true
+  type        = string
 }
 
 variable "deployed_by" {
-  default = "terraform"
-  type    = string
+  default     = "terraform"
+  description = "How the resources are managed"
+  type        = string
 }
 
 variable "environment" {
-  type = string
+  description = "What is the environment of the resources"
+  type        = string
 }
 
-variable "git_repository_root_path" {
-  type = string
-}
-
-variable "git_repository_base_url" {
-  default = "https://git.fr.clara.net"
-  type    = string
-}
-
-variable "git_repository_regex" {
-  default = "^.*git.fr.clara.net[:/](?P<repository_path>[\\w-/]+).git"
-  type    = string
+variable "git_remote_name" {
+  default     = "origin"
+  description = "Git remote name"
+  type        = string
 }
 
 variable "managed_by" {
-  default = "claranet"
-  type    = string
+  default     = "claranet"
+  description = "Who is managing the resources"
+  nullable    = true
+  type        = string
 }
 
 variable "owner" {
-  default  = null
-  nullable = true
-  type     = string
+  default     = null
+  description = "Who is owner of the resources"
+  nullable    = true
+  type        = string
 }
 
 variable "stack" {
-  default  = null
-  nullable = true
-  type     = string
+  default     = null
+  description = "Terraform stack name"
+  nullable    = true
+  type        = string
 }
 
 variable "supervised_by" {
-  default = "claranet"
-  type    = string
+  default     = "claranet"
+  description = "Who is supervising the resources"
+  type        = string
 }

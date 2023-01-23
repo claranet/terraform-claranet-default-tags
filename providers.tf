@@ -3,8 +3,8 @@ terraform {
 
   required_providers {
     git = {
-      source  = "innovationnorway/git"
-      version = "0.1.3"
+      source  = "metio/git"
+      version = ">= 2023.1.20"
     }
   }
 }
