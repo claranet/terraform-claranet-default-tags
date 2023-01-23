@@ -54,7 +54,7 @@ provider "aws" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1 |
-| <a name="requirement_git"></a> [git](#requirement\_git) | 0.1.3 |
+| <a name="requirement_git"></a> [git](#requirement\_git) | 2023.1.20 |
 
 ## Providers
 
@@ -70,7 +70,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [git_repository.current](https://registry.terraform.io/providers/innovationnorway/git/0.1.3/docs/data-sources/repository) | data source |
+| [git_remotes.current](https://registry.terraform.io/providers/metio/git/2023.1.20/docs/data-sources/remotes) | data source |
 
 ## Inputs
 
@@ -82,7 +82,6 @@ No modules.
 | <a name="input_environment"></a> [environment](#input\_environment) | n/a | `string` | n/a | yes |
 | <a name="input_git_repository_base_url"></a> [git\_repository\_base\_url](#input\_git\_repository\_base\_url) | n/a | `string` | `"https://git.fr.clara.net"` | no |
 | <a name="input_git_repository_regex"></a> [git\_repository\_regex](#input\_git\_repository\_regex) | n/a | `string` | `"^.*git.fr.clara.net[:/](?P<repository_path>[\\w-/]+).git"` | no |
-| <a name="input_git_repository_root_path"></a> [git\_repository\_root\_path](#input\_git\_repository\_root\_path) | n/a | `string` | n/a | yes |
 | <a name="input_managed_by"></a> [managed\_by](#input\_managed\_by) | n/a | `string` | `"claranet"` | no |
 | <a name="input_owner"></a> [owner](#input\_owner) | n/a | `string` | `null` | no |
 | <a name="input_stack"></a> [stack](#input\_stack) | n/a | `string` | `null` | no |
@@ -93,6 +92,8 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_default_tags"></a> [default\_tags](#output\_default\_tags) | n/a |
+| <a name="output_git_path"></a> [git\_path](#output\_git\_path) | n/a |
+| <a name="output_git_paths"></a> [git\_paths](#output\_git\_paths) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Development
