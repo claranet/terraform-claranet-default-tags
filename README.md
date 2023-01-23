@@ -76,15 +76,15 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_application_stack_name"></a> [application\_stack\_name](#input\_application\_stack\_name) | n/a | `string` | `null` | no |
-| <a name="input_claranet_project_id"></a> [claranet\_project\_id](#input\_claranet\_project\_id) | n/a | `string` | `null` | no |
-| <a name="input_deployed_by"></a> [deployed\_by](#input\_deployed\_by) | n/a | `string` | `"terraform"` | no |
-| <a name="input_environment"></a> [environment](#input\_environment) | n/a | `string` | n/a | yes |
-| <a name="input_git_remote_name"></a> [git\_remote\_name](#input\_git\_remote\_name) | n/a | `string` | `"origin"` | no |
-| <a name="input_managed_by"></a> [managed\_by](#input\_managed\_by) | n/a | `string` | `"claranet"` | no |
-| <a name="input_owner"></a> [owner](#input\_owner) | n/a | `string` | `null` | no |
-| <a name="input_stack"></a> [stack](#input\_stack) | n/a | `string` | `null` | no |
-| <a name="input_supervised_by"></a> [supervised\_by](#input\_supervised\_by) | n/a | `string` | `"claranet"` | no |
+| <a name="input_application_stack_name"></a> [application\_stack\_name](#input\_application\_stack\_name) | Application stack name | `string` | `null` | no |
+| <a name="input_claranet_project_id"></a> [claranet\_project\_id](#input\_claranet\_project\_id) | Project ID as defined in Claranet SynApps database | `string` | `null` | no |
+| <a name="input_deployed_by"></a> [deployed\_by](#input\_deployed\_by) | How the resources are managed | `string` | `"terraform"` | no |
+| <a name="input_environment"></a> [environment](#input\_environment) | Resources' environment | `string` | n/a | yes |
+| <a name="input_git_remote_name"></a> [git\_remote\_name](#input\_git\_remote\_name) | Git remote name | `string` | `"origin"` | no |
+| <a name="input_managed_by"></a> [managed\_by](#input\_managed\_by) | Who is managing the resources | `string` | `"claranet"` | no |
+| <a name="input_owner"></a> [owner](#input\_owner) | Who is owner of the resources | `string` | `null` | no |
+| <a name="input_stack"></a> [stack](#input\_stack) | Terraform stack name | `string` | `null` | no |
+| <a name="input_supervised_by"></a> [supervised\_by](#input\_supervised\_by) | Who is supervising the resources | `string` | `"claranet"` | no |
 
 ## Outputs
 
