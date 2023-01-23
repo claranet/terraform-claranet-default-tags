@@ -1,0 +1,134 @@
+variables:
+  NODE_IMAGE: "node"
+  NODE_VERSION: "16.19.0"
+  TERRAFORM_IMAGE: "hashicorp/terraform"
+  TFLINT_IMAGE: "ghcr.io/terraform-linters/tflint"
+  TFLINT_PLUGIN_DIR: ".tflint.d/plugins"
+  TFSEC_ARGS: "."
+  TFSEC_ENABLED: "true"
+  TFSEC_IMAGE: "aquasec/tfsec-ci"
+  TF_IN_AUTOMATION: "true"
+default:
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - .npm/
+      - .terraform/
+
+stages:
+  - fmt
+  - validate
+  - lint
+  - release
+
+fmt:
+  extends: .terraform:fmt
+
+validate:
+  extends: .terraform:validate
+
+tflint:
+  extends: .terraform:tflint
+
+tfsec:
+  extends: .terraform:tfsec
+
+release:
+  extends: .semantic-release
+
+config:
+  stage: .pre
+  script:
+    - source .env
+  artifacts:
+    reports:
+      dotenv: build.env
+  rules:
+    - exists:
+        - .env
+
+.terraform_base:
+  image:
+    name: "${TERRAFORM_IMAGE}:${TERRAFORM_VERSION}"
+    entrypoint: [ "" ]
+
+.terraform:fmt:
+  extends: .terraform_base
+  stage: fmt
+  rules:
+    # exclude merge requests
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
+    - if: '$CI_PIPELINE_SOURCE != "schedule"'
+  script:
+    - terraform fmt --check
+
+.terraform:validate:
+  extends: .terraform_base
+  stage: validate
+  rules:
+    # exclude merge requests
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
+    - if: '$CI_PIPELINE_SOURCE != "schedule"'
+  script:
+    - terraform init
+    - terraform validate
+
+.terraform:tflint:
+  image:
+    name: ${TFLINT_IMAGE}:v${TFLINT_VERSION}
+  stage: lint
+  artifacts:
+    name: "$CI_JOB_NAME artifacts from $CI_PROJECT_NAME on $CI_COMMIT_REF_SLUG"
+    reports:
+      junit: reports/tflint.xml
+    paths:
+      - reports/
+  rules:
+    # exclude merge requests
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+  before_script:
+    - mkdir -p reports
+  script:
+    - >
+      [ ! -d ".tflint.d/plugins" ] && tflint --init
+    - tflint
+    - tflint --format=junit  > reports/tflint.xml
+
+.terraform:tfsec:
+  image:
+    name : ${TFSEC_IMAGE}:v${TFSEC_VERSION}
+    entrypoint: [""]
+  stage: lint
+  artifacts:
+    name: "$CI_JOB_NAME artifacts from $CI_PROJECT_NAME on $CI_COMMIT_REF_SLUG"
+    reports:
+      junit: reports/tfsec.xml
+    paths:
+      - reports/
+  rules:
+    # exclude merge requests
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
+    # on any branch: when $TFSEC_ENABLED is set
+    - if: $TFSEC_ENABLED && $CI_PIPELINE_SOURCE != "schedule"
+      allow_failure: true
+  before_script:
+    - mkdir -p reports
+  script:
+    - |
+      tfsec $TFSEC_ARGS
+      tfsec --format junit --out "reports/tfsec.xml" $TFSEC_ARGS
+
+.semantic-release:
+  image: ${NODE_IMAGE}:${NODE_VERSION}
+  stage: release
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run semantic-release
