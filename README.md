@@ -61,7 +61,7 @@ provider "aws" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_git"></a> [git](#provider\_git) | 0.1.3 |
+| <a name="provider_git"></a> [git](#provider\_git) | 2023.1.20 |
 
 ## Modules
 
@@ -95,3 +95,49 @@ No modules.
 |------|-------------|
 | <a name="output_default_tags"></a> [default\_tags](#output\_default\_tags) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+## Development
+
+To automatically install required plugins and versions with `asdf` use:
+
+```shell
+make dev-install
+```
+
+### asdf
+
+[asdf](https://github.com/asdf-vm/asdf) allows to easily manage tools version
+per project.
+See [documentation](https://asdf-vm.com/guide/getting-started.html#_3-install-asdf)
+for installation instructions.
+
+Versions are described in the `.tool-versions` file. If you already have the
+required plugins installed, simply run:
+
+```shell
+asdf install
+```
+
+### pre-commit
+
+To enable `pre-commit` hooks, run:
+
+```shell
+pre-commit install
+```
+
+### terraform-docs
+
+To update Terraform documentation in `README.md` run:
+
+```shell
+make doc
+```
+
+### tflint and tfsec
+
+To manually run linters run:
+
+```shell
+make lint
+```
