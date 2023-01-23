@@ -70,7 +70,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [git_remotes.current](https://registry.terraform.io/providers/metio/git/2023.1.20/docs/data-sources/remotes) | data source |
+| [git_remote.current](https://registry.terraform.io/providers/metio/git/2023.1.20/docs/data-sources/remote) | data source |
 
 ## Inputs
 
@@ -80,8 +80,7 @@ No modules.
 | <a name="input_claranet_project_id"></a> [claranet\_project\_id](#input\_claranet\_project\_id) | n/a | `string` | `null` | no |
 | <a name="input_deployed_by"></a> [deployed\_by](#input\_deployed\_by) | n/a | `string` | `"terraform"` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | n/a | `string` | n/a | yes |
-| <a name="input_git_repository_base_url"></a> [git\_repository\_base\_url](#input\_git\_repository\_base\_url) | n/a | `string` | `"https://git.fr.clara.net"` | no |
-| <a name="input_git_repository_regex"></a> [git\_repository\_regex](#input\_git\_repository\_regex) | n/a | `string` | `"^.*git.fr.clara.net[:/](?P<repository_path>[\\w-/]+).git"` | no |
+| <a name="input_git_remote_name"></a> [git\_remote\_name](#input\_git\_remote\_name) | n/a | `string` | `"origin"` | no |
 | <a name="input_managed_by"></a> [managed\_by](#input\_managed\_by) | n/a | `string` | `"claranet"` | no |
 | <a name="input_owner"></a> [owner](#input\_owner) | n/a | `string` | `null` | no |
 | <a name="input_stack"></a> [stack](#input\_stack) | n/a | `string` | `null` | no |

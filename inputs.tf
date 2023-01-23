@@ -19,13 +19,8 @@ variable "environment" {
   type = string
 }
 
-variable "git_repository_base_url" {
-  default = "https://git.fr.clara.net"
-  type    = string
-}
-
-variable "git_repository_regex" {
-  default = "^.*git.fr.clara.net[:/](?P<repository_path>[\\w-/]+).git"
+variable "git_remote_name" {
+  default = "origin"
   type    = string
 }
 

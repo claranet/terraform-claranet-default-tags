@@ -1,5 +1,5 @@
 locals {
-  iac_git_url = join(",", [for remote in data.git_remotes.current.remotes : remote.urls[0]])
+  iac_git_url = join(",", data.git_remote.current.urls)
 
   iac_base_path = trimprefix(
     abspath(path.root),
