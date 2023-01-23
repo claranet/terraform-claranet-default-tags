@@ -54,13 +54,13 @@ provider "aws" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1 |
-| <a name="requirement_git"></a> [git](#requirement\_git) | 2023.1.20 |
+| <a name="requirement_git"></a> [git](#requirement\_git) | >= 2023.1.20 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_git"></a> [git](#provider\_git) | 2023.1.20 |
+| <a name="provider_git"></a> [git](#provider\_git) | >= 2023.1.20 |
 
 ## Modules
 
@@ -70,16 +70,16 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [git_remote.current](https://registry.terraform.io/providers/metio/git/2023.1.20/docs/data-sources/remote) | data source |
+| [git_remote.current](https://registry.terraform.io/providers/metio/git/latest/docs/data-sources/remote) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_application_stack_name"></a> [application\_stack\_name](#input\_application\_stack\_name) | Application stack name | `string` | `null` | no |
-| <a name="input_claranet_project_id"></a> [claranet\_project\_id](#input\_claranet\_project\_id) | Project ID as defined in Claranet SynApps database | `string` | `null` | no |
+| <a name="input_claranet_project_id"></a> [claranet\_project\_id](#input\_claranet\_project\_id) | Project ID as defined in Claranet SynApps CMDB | `string` | `null` | no |
 | <a name="input_deployed_by"></a> [deployed\_by](#input\_deployed\_by) | How the resources are managed | `string` | `"terraform"` | no |
-| <a name="input_environment"></a> [environment](#input\_environment) | Resources' environment | `string` | n/a | yes |
+| <a name="input_environment"></a> [environment](#input\_environment) | What is the environment of the resources | `string` | n/a | yes |
 | <a name="input_git_remote_name"></a> [git\_remote\_name](#input\_git\_remote\_name) | Git remote name | `string` | `"origin"` | no |
 | <a name="input_managed_by"></a> [managed\_by](#input\_managed\_by) | Who is managing the resources | `string` | `"claranet"` | no |
 | <a name="input_owner"></a> [owner](#input\_owner) | Who is owner of the resources | `string` | `null` | no |
@@ -91,8 +91,6 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_default_tags"></a> [default\_tags](#output\_default\_tags) | n/a |
-| <a name="output_git_path"></a> [git\_path](#output\_git\_path) | n/a |
-| <a name="output_git_paths"></a> [git\_paths](#output\_git\_paths) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Development
