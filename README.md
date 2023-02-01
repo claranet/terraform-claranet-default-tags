@@ -6,12 +6,14 @@ on your projects.
 
 ## Usage
 
+### AWS
+
 On AWS you can use module output to set the `default_tags` parameter of the
 AWS provider:
 
 ```hcl
 module "default_tags" {
-  source = "git@git.fr.clara.net:claranet/projects/cloud/ccoe/claranet-terraform-default-tags.git?ref=v0.1.0"
+  source = "git@git.fr.clara.net:claranet/projects/cloud/ccoe/claranet-terraform-default-tags.git?ref=v0.2.0"
 
   environment              = var.environment
 }
@@ -45,6 +47,36 @@ provider "aws" {
       }
     )
   }
+}
+```
+
+### Azure
+
+On Azure using [Claranet modules](https://registry.terraform.io/search/modules?namespace=claranet)
+you can use the `extra_tags` parameter:
+
+```hcl
+module "default_tags" {
+  source = "git@git.fr.clara.net:claranet/projects/cloud/ccoe/claranet-terraform-default-tags.git?ref=v0.2.0"
+
+  environment = var.environment
+}
+
+module "azure_region" {
+  source  = "claranet/regions/azurerm"
+
+  azure_region = var.azure_region
+}
+
+module "rg" {
+  source  = "claranet/rg/azurerm"
+
+  location    = module.azure_region.location
+  client_name = var.client_name
+  environment = var.environment
+  stack       = var.stack
+
+  extra_tags = module.default_tags.default_tags
 }
 ```
 
