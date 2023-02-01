@@ -1,3 +1,5 @@
+## [0.2.1](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.0...v0.2.1) (2023-02-01)
+
 # [0.2.0](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.1.1...v0.2.0) (2023-01-23)
 
 
