@@ -126,6 +126,8 @@ config:
 .semantic-release:
   image: ${NODE_IMAGE}:${NODE_VERSION}
   stage: release
+  variables:
+    GITLAB_TOKEN: ${SEMANTIC_RELEASE_GITLAB_TOKEN}
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   before_script:
