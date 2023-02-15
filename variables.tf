@@ -5,9 +5,9 @@ variable "application_stack_name" {
   type        = string
 }
 
-variable "claranet_project_id" {
+variable "synapps_project_id" {
   default     = null
-  description = "Project ID as defined in Claranet SynApps CMDB"
+  description = "Project ID as defined in Claranet SynApps CMDB to set the claranet_project_id tag"
   nullable    = true
   type        = string
 }

@@ -108,7 +108,6 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_application_stack_name"></a> [application\_stack\_name](#input\_application\_stack\_name) | Application stack name | `string` | `null` | no |
-| <a name="input_claranet_project_id"></a> [claranet\_project\_id](#input\_claranet\_project\_id) | Project ID as defined in Claranet SynApps CMDB | `string` | `null` | no |
 | <a name="input_deployed_by"></a> [deployed\_by](#input\_deployed\_by) | How the resources are managed | `string` | `"terraform"` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | What is the environment of the resources | `string` | n/a | yes |
 | <a name="input_git_remote_name"></a> [git\_remote\_name](#input\_git\_remote\_name) | Git remote name | `string` | `"origin"` | no |
@@ -116,6 +115,7 @@ No modules.
 | <a name="input_owner"></a> [owner](#input\_owner) | Who is owner of the resources | `string` | `null` | no |
 | <a name="input_stack"></a> [stack](#input\_stack) | Terraform stack name | `string` | `null` | no |
 | <a name="input_supervised_by"></a> [supervised\_by](#input\_supervised\_by) | Who is supervising the resources | `string` | `"claranet"` | no |
+| <a name="input_synapps_project_id"></a> [synapps\_project\_id](#input\_synapps\_project\_id) | Project ID as defined in Claranet SynApps CMDB to set the claranet\_project\_id tag | `string` | `null` | no |
 
 ## Outputs
 
