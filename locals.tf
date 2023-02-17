@@ -10,15 +10,19 @@ locals {
     ]
   )
 
-  iac_base_path = trimprefix(
-    abspath(path.root),
-    format("%s/", local.git_path),
-  )
-
   git_paths = compact([for relpath in [".", "..", "../..", "../../..", "../../../..", "../../../../.."] :
     fileexists(
     format("%s/%s/.git/HEAD", path.root, relpath)) ? format("%s/%s", path.root, relpath) : null
   ])
 
   git_path = abspath(local.git_paths[0])
+
+  iac_base_path_raw = trimprefix(
+    trimprefix(
+      abspath(path.root),
+      format("%s", local.git_path),
+    ), "/"
+  )
+
+  iac_base_path = local.iac_base_path_raw == "" ? "." : local.iac_base_path_raw
 }
