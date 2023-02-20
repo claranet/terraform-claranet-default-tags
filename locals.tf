@@ -17,12 +17,11 @@ locals {
 
   git_path = abspath(local.git_paths[0])
 
-  iac_base_path_raw = trimprefix(
+  iac_base_path = coalesce(
     trimprefix(
       abspath(path.root),
-      format("%s", local.git_path),
-    ), "/"
+      local.git_path,
+    ),
+    "."
   )
-
-  iac_base_path = local.iac_base_path_raw == "" ? "." : local.iac_base_path_raw
 }
