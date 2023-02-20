@@ -102,7 +102,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [git_remote.current](https://registry.terraform.io/providers/metio/git/latest/docs/data-sources/remote) | data source |
+| [git_remotes.current](https://registry.terraform.io/providers/metio/git/latest/docs/data-sources/remotes) | data source |
 
 ## Inputs
 

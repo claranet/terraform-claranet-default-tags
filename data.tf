@@ -1,4 +1,3 @@
-data "git_remote" "current" {
+data "git_remotes" "current" {
   directory = local.git_path
-  name      = var.git_remote_name
 }
