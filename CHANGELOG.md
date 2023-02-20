@@ -1,3 +1,10 @@
+## [0.2.3](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.2...v0.2.3) (2023-02-20)
+
+
+### Code Refactoring
+
+* **git_remotes:** Don't fail if no git remote is defined ([be75d5a](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/be75d5ab0af8f12a7989977c46e3f69a458f9906))
+
 ## [0.2.2](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.1...v0.2.2) (2023-02-16)
 
 
