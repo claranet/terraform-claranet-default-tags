@@ -1,8 +1,7 @@
-# claranet-terraform-default-tags
+# Claranet Terraform default tags module
 
-Claranet's Terraform default tags module is here to help you deploy
-[Claranet's tagging policy](https://claranet-fr.atlassian.net/wiki/spaces/CCoE/pages/782927917/Tagging+Policy+v2)
-on your projects.
+Claranet's Terraform default tags module is here to help you deploy Claranet's
+tagging policy on your projects.
 
 ## Usage
 
@@ -13,7 +12,7 @@ AWS provider:
 
 ```hcl
 module "default_tags" {
-  source = "git@git.fr.clara.net:claranet/projects/cloud/ccoe/claranet-terraform-default-tags.git?ref=v0.2.0"
+  source = "github.com/claranet/claranet-terraform-default-tags"
 
   environment              = var.environment
 }
@@ -57,7 +56,7 @@ you can use the `extra_tags` parameter:
 
 ```hcl
 module "default_tags" {
-  source = "git@git.fr.clara.net:claranet/projects/cloud/ccoe/claranet-terraform-default-tags.git?ref=v0.2.0"
+  source = "github.com/claranet/claranet-terraform-default-tags"
 
   environment = var.environment
 }
