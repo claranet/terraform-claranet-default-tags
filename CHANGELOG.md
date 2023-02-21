@@ -1,3 +1,10 @@
+## [0.2.5](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.4...v0.2.5) (2023-02-21)
+
+
+### Styles
+
+* Rename inputs.tf -> variables.tf ([290c7bf](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/290c7bfaac6e241b1ca7f7daee2e67ffb98bad9d))
+
 ## [0.2.4](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.3...v0.2.4) (2023-02-21)
 
 
