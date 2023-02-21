@@ -10,15 +10,25 @@ locals {
     ]
   )
 
-  iac_base_path = trimprefix(
-    abspath(path.root),
-    format("%s/", local.git_path),
-  )
-
   git_paths = compact([for relpath in [".", "..", "../..", "../../..", "../../../..", "../../../../.."] :
     fileexists(
     format("%s/%s/.git/HEAD", path.root, relpath)) ? format("%s/%s", path.root, relpath) : null
   ])
 
   git_path = abspath(local.git_paths[0])
+
+  // coalesce() is used to avoid an empty string when the current path is the
+  // Git root path. Terraform plan with AWS provider default_tags and empty
+  // string returns "known after apply".
+  // Linked to: https://github.com/hashicorp/terraform-provider-aws/issues/18311
+  iac_base_path = trimprefix(
+    coalesce(
+      trimprefix(
+        abspath(path.root),
+        local.git_path,
+      ),
+      "."
+    ),
+    "/",
+  )
 }
