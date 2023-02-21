@@ -1,3 +1,17 @@
+## [0.2.4](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.3...v0.2.4) (2023-02-21)
+
+
+### Bug Fixes
+
+* **iac_base_path:** Put back prefix trimming to avoid breaking current behavior ([99deb81](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/99deb81cefaf8746551475f496e6fc7ec66db075))
+* **iac_base_path:** Remove prefix trimming ([0bb6606](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/0bb66060294de087e6073bf9e5839940edbe7634))
+* **iac_base_path:** Returns . when base path is git root instead of full path ([42f3c03](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/42f3c038d2d99b58ecda5ec44ea32e53eaea2aa9))
+
+
+### Documentation
+
+* **iac_base_path:** Explain coalesce usage ([3be4ec2](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/3be4ec257a96d08513b840bc3f240c2bfaadc29b))
+
 ## [0.2.3](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.2...v0.2.3) (2023-02-20)
 
 
