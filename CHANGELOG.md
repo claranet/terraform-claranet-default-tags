@@ -1,3 +1,16 @@
+## [0.2.6](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.5...v0.2.6) (2023-02-22)
+
+
+### Miscellaneous Chores
+
+* Add Apache 2.0 LICENSE ([d56b56a](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/d56b56ac4d33811d43729da1421badfcb90f7220))
+* Add NOTICE file ([9d33f76](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/9d33f76ee03dbf5b401933bdcf8f1550075cb8a4))
+
+
+### Documentation
+
+* Remove internal Claranet tools reference ([22e3fec](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/22e3fecfbdb41b8e895a4532774e7b7461fd05dc))
+
 ## [0.2.5](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.4...v0.2.5) (2023-02-21)
 
 
