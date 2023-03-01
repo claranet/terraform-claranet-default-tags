@@ -12,7 +12,7 @@ dev-install: asdf-install-plugins
 	pre-commit install
 
 doc:
-	terraform-docs markdown table --output-file README.md --output-template '<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->\n{{ .Content }}\n<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->' .
+	terraform-docs markdown table --output-file README.md --output-template '<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->\n{{ .Content }}\n<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->' --lockfile=false .
 
 lint:
 	tfsec
