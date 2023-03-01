@@ -1,7 +1,7 @@
 output "default_tags" {
   value = {
     application_stack_name = var.application_stack_name
-    claranet_project_id    = var.claranet_project_id
+    claranet_project_id    = var.synapps_project_id
     deployed_by            = var.deployed_by
     env                    = var.environment
     iac_base_path          = local.iac_base_path
