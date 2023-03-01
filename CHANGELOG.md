@@ -1,3 +1,20 @@
+## [0.3.0](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.6...v0.3.0) (2023-03-01)
+
+
+### Features
+
+* Rename `claranet_project_id` to `synapps_project_id` ([6397264](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/63972646b0027fedf8ade2212ebecae14581f4cd))
+
+
+### Continuous Integration
+
+* Add Github release workflow ([5a10ad3](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/5a10ad3de32f160a2211f7c12553b27310d526b8))
+
+
+### Miscellaneous Chores
+
+* Don't generate dependencies in docs from lockfile ([56051aa](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/56051aa6fe4d009d693576b0dea6ef7a8d48a396))
+
 ## [0.2.6](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.5...v0.2.6) (2023-02-22)
 
 
