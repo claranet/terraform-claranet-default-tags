@@ -1,3 +1,10 @@
+## [0.3.1](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.3.0...v0.3.1) (2023-03-02)
+
+
+### Bug Fixes
+
+* Github release workflow ([17b5c57](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/17b5c57c7219776adb5600a90f93ae2206970dfa))
+
 ## [0.3.0](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.2.6...v0.3.0) (2023-03-01)
 
 
