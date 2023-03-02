@@ -1,3 +1,10 @@
+## [0.3.2](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.3.1...v0.3.2) (2023-03-02)
+
+
+### Bug Fixes
+
+* Don't skip CI on release tag to let Github Actions run ([91ef6cf](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/commit/91ef6cfd7425e4d205fc16a0bc2ca4c2c4ebb9de))
+
 ## [0.3.1](https://git.fr.clara.net/claranet/projects/cloud/ccoe/claranet-terraform-default-tags/compare/v0.3.0...v0.3.1) (2023-03-02)
 
 
