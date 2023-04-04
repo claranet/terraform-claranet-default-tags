@@ -55,10 +55,3 @@ variable "supervised_by" {
   description = "Who is supervising the resources"
   type        = string
 }
-
-variable "compact_outputed_tags" {
-  default     = true
-  type        = bool
-  description = "Remove generated tags when value is null"
-  nullable    = false
-}
