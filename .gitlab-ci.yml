@@ -47,6 +47,17 @@ config:
     - exists:
         - .env
 
+commitlint:
+  image: node:lts-alpine
+  stage: validate
+  before_script:
+    - apk add --no-cache git
+    - npm install -g @commitlint/cli @commitlint/config-conventional
+  script:
+    - npx commitlint --from ${CI_MERGE_REQUEST_DIFF_BASE_SHA} --to HEAD --verbose
+  rules:
+    - if: $CI_MERGE_REQUEST_IID
+
 .terraform_base:
   image:
     name: "${TERRAFORM_IMAGE}:${TERRAFORM_VERSION}"
