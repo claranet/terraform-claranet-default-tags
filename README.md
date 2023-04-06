@@ -121,7 +121,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_default_tags"></a> [default\_tags](#output\_default\_tags) | n/a |
+| <a name="output_default_tags"></a> [default\_tags](#output\_default\_tags) | Generated default tags. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Development
