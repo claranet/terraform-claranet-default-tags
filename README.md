@@ -159,7 +159,7 @@ pre-commit install
 To update Terraform documentation in `README.md` run:
 
 ```shell
-make doc
+make docs
 ```
 
 ### tflint and tfsec
