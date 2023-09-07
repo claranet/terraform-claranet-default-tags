@@ -2,5 +2,31 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>claranet/projects/cloud/ccoe/renovatebot/renovate-config"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies", "plugin", "required_provider"],
+      "automerge": true
+    },
+    {
+      "matchDepNames": [
+          "pre-commit",
+          "tflint"
+      ],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["terraform"],
+      "allowedVersions": "<=1.5"
+    }
   ]
 }
