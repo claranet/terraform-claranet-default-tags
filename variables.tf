@@ -12,6 +12,19 @@ variable "synapps_project_id" {
   type        = string
 }
 
+variable "synapps_status" {
+  default     = null
+  description = "Resource status as defined in Claranet SynApps CMDB to override the status field"
+  nullable    = true
+  type        = string
+  validation {
+    condition = (
+      var.synapps_status == null ? true : contains(["BUILDING", "RELEASED", "UNPROVISIONNED", "UNPROVISIONNING", "SUPPLIED", null], var.synapps_status)
+    )
+    error_message = "Invalid value for synapps_status. Allowed values are: BUILDING, RELEASED, UNPROVISIONNED, UNPROVISIONNING, SUPPLIED, null (default)"
+  }
+}
+
 variable "deployed_by" {
   default     = "terraform"
   description = "How the resources are managed"
