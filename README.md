@@ -116,6 +116,7 @@ No modules.
 | <a name="input_stack"></a> [stack](#input\_stack) | Terraform stack name | `string` | `null` | no |
 | <a name="input_supervised_by"></a> [supervised\_by](#input\_supervised\_by) | Who is supervising the resources | `string` | `"claranet"` | no |
 | <a name="input_synapps_project_id"></a> [synapps\_project\_id](#input\_synapps\_project\_id) | Project ID as defined in Claranet SynApps CMDB to set the claranet\_project\_id tag | `string` | `null` | no |
+| <a name="input_synapps_status"></a> [synapps\_status](#input\_synapps\_status) | Override project status in Claranet SynApps CMDB for tagged ressources | `string` | `null` | no |
 
 ## Outputs
 

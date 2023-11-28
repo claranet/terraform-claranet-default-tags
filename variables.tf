@@ -12,6 +12,13 @@ variable "synapps_project_id" {
   type        = string
 }
 
+variable "synapps_status" {
+  default     = null
+  description = "Override project status in Claranet SynApps CMDB for tagged ressources"
+  nullable    = true
+  type        = string
+}
+
 variable "deployed_by" {
   default     = "terraform"
   description = "How the resources are managed"
