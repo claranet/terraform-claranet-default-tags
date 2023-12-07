@@ -21,7 +21,7 @@ variable "synapps_status" {
     condition = (
       var.synapps_status == null ? true : contains(["BUILDING", "RELEASED", "UNPROVISIONNED", "UNPROVISIONNING", "SUPPLIED", null], var.synapps_status)
     )
-    error_message = "Invalid value for synapps_status. Allowed values are: BUILDING, RELEASED, UNPROVISIONNED, UNPROVISIONNING, SUPPLIED, null (default)"
+    error_message = "Invalid value for synapps_status. Allowed values are: BUILDING, RELEASED, UNPROVISIONNED, UNPROVISIONNING, SUPPLIED, null (default)."
   }
 }
 
