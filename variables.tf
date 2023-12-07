@@ -19,9 +19,9 @@ variable "synapps_status" {
   type        = string
   validation {
     condition = (
-      var.synapps_status == null ? true : contains(["BUILDING", "RELEASED", "UNPROVISIONNED", "UNPROVISIONNING", "SUPPLIED", null], var.synapps_status)
+      var.synapps_status == null ? true : contains(["BUILDING", "RELEASED", "UNPROVISIONED", "UNPROVISIONING", "SUPPLIED", null], var.synapps_status)
     )
-    error_message = "Invalid value for synapps_status. Allowed values are: BUILDING, RELEASED, UNPROVISIONNED, UNPROVISIONNING, SUPPLIED, null (default)"
+    error_message = "Invalid value for synapps_status. Allowed values are: BUILDING, RELEASED, UNPROVISIONED, UNPROVISIONING, SUPPLIED, null (default)."
   }
 }
 
