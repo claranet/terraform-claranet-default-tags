@@ -1,3 +1,19 @@
+## [0.4.1](https://git.fr.clara.net/[secure]/cloud/ccoe/claranet-terraform-default-tags/compare/v0.4.0...v0.4.1) (12/7/2023)
+
+
+### Bug Fixes
+
+* error message must end with a period or question mark ([6ce33b8](https://git.fr.clara.net/[secure]/cloud/ccoe/claranet-terraform-default-tags/commit/6ce33b8da98183d06c636fa81dd47710e12776b9))
+* typos ([512043a](https://git.fr.clara.net/[secure]/cloud/ccoe/claranet-terraform-default-tags/commit/512043ab6af8a55752a8117a2ffa2a774f2effe6))
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([f8300ef](https://git.fr.clara.net/[secure]/cloud/ccoe/claranet-terraform-default-tags/commit/f8300efad65b79187fe7342de500ac8ed5b49e5f))
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.17.0 ([713de5d](https://git.fr.clara.net/[secure]/cloud/ccoe/claranet-terraform-default-tags/commit/713de5da823fd8fe78bf2bd0beb683482d98c9e2))
+* **deps:** update dependency semantic-release to v22.0.10 ([ffdfd4e](https://git.fr.clara.net/[secure]/cloud/ccoe/claranet-terraform-default-tags/commit/ffdfd4e45c6478669fdf9378a44b55e31f41ef78))
+* **deps:** update dependency semantic-release to v22.0.9 ([e6f6aa3](https://git.fr.clara.net/[secure]/cloud/ccoe/claranet-terraform-default-tags/commit/e6f6aa3d1dc10b72a7c32a541f0caffed296b1f6))
+
 ## [0.4.0](https://git.fr.clara.net/[secure]/cloud/ccoe/claranet-terraform-default-tags/compare/v0.3.2...v0.4.0) (11/29/2023)
 
 
