@@ -1,5 +1,5 @@
 terraform      latest
-pre-commit     3.5.0
+pre-commit     3.6.0
 tflint         0.49.0
 tfsec          1.28.4
 terraform-docs 0.16.0
