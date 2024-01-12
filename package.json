@@ -10,6 +10,6 @@
     "@semantic-release/gitlab": "^13.0.0",
     "@semantic-release/npm": "^11.0.0",
     "conventional-changelog-conventionalcommits": "^7.0.0",
-    "semantic-release": "^22.0.0"
+    "semantic-release": "^23.0.0"
   }
 }
