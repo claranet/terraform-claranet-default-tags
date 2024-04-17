@@ -38,6 +38,7 @@
     [
       "@semantic-release/release-notes-generator",
       {
+        "repoUrl": "https://github.com/claranet/terraform-claranet-default-tags",
         "preset": "conventionalcommits",
         "parserOpts": {
           "noteKeywords": [
