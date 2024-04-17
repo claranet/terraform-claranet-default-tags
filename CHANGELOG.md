@@ -1,4 +1,4 @@
-## [0.4.1](https://github.com/claranet/terraform-claranet-default-tags/compare/v0.4.0...v0.4.1) (12/7/2023)
+## [0.4.1](https://github.com/claranet/terraform-claranet-default-tags/compare/v0.4.0...v0.4.1) (2023-12-07)
 
 
 ### Bug Fixes
@@ -14,7 +14,7 @@
 * **deps:** update dependency semantic-release to v22.0.10 ([ffdfd4e](https://github.com/claranet/terraform-claranet-default-tags/commit/ffdfd4e45c6478669fdf9378a44b55e31f41ef78))
 * **deps:** update dependency semantic-release to v22.0.9 ([e6f6aa3](https://github.com/claranet/terraform-claranet-default-tags/commit/e6f6aa3d1dc10b72a7c32a541f0caffed296b1f6))
 
-## [0.4.0](https://github.com/claranet/terraform-claranet-default-tags/compare/v0.3.2...v0.4.0) (11/29/2023)
+## [0.4.0](https://github.com/claranet/terraform-claranet-default-tags/compare/v0.3.2...v0.4.0) (2023-11-29)
 
 
 ### Features
