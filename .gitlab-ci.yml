@@ -1,4 +1,5 @@
 variables:
+  SEMANTIC_RELEASE_EXTRA_ARGS: --repository-url https://github.com/claranet/terraform-claranet-default-tags
   SHARED_RUNNER_TAG: ops4ops-claranet
 
 include:
