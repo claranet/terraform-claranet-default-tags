@@ -1,14 +1,14 @@
-## [0.4.3](https://github.com//[secure]/cloud/ccoe/claranet-terraform-default-tags/compare/v0.4.2...v0.4.3) (2024-04-17)
+## [0.4.3](https://github.com/claranet/claranet-terraform-default-tags/compare/v0.4.2...v0.4.3) (2024-04-17)
 
 
 ### Bug Fixes
 
-* **changelog:** change URLs ([a009746](https://github.com//[secure]/cloud/ccoe/claranet-terraform-default-tags/commit/a009746cb1cbcc8fd9896e1a9794644f9b61b95d))
+* **changelog:** change URLs ([a009746](https://github.com/claranet/claranet-terraform-default-tags/commit/a009746cb1cbcc8fd9896e1a9794644f9b61b95d))
 
 
 ### Continuous Integration
 
-* **release:** use host and repository parameters ([7dd857b](https://github.com//[secure]/cloud/ccoe/claranet-terraform-default-tags/commit/7dd857b17bf935158e2ab498d57f805a179524cc))
+* **release:** use host and repository parameters ([7dd857b](https://github.com/claranet/claranet-terraform-default-tags/commit/7dd857b17bf935158e2ab498d57f805a179524cc))
 
 ## [0.4.2](https://github.com/claranet/terraform-claranet-default-tags/compare/v0.4.1...v0.4.2) (2024-04-17)
 
