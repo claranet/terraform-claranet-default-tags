@@ -1,3 +1,15 @@
+## 0.4.4 (2024-04-17)
+
+
+### Bug Fixes
+
+* **changelog:** links 836d38d
+
+
+### Miscellaneous Chores
+
+* **release:** disable links in changelog c612780
+
 ## [0.4.3](https://github.com/claranet/claranet-terraform-default-tags/compare/v0.4.2...v0.4.3) (2024-04-17)
 
 
