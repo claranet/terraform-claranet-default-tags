@@ -10,9 +10,9 @@ locals {
     ]
   )
 
-  git_paths = compact([for relpath in [".", "..", "../..", "../../..", "../../../..", "../../../../.."] :
-    fileexists(
-    format("%s/%s/.git/HEAD", path.root, relpath)) ? format("%s/%s", path.root, relpath) : null
+  git_paths = compact([
+    for relpath in [".", "..", "../..", "../../..", "../../../..", "../../../../.."] :
+    try(fileexists(format("%s/%s/.git/HEAD", path.root, relpath)), false) ? format("%s/%s", path.root, relpath) : null
   ])
 
   git_path = abspath(local.git_paths[0])
