@@ -1,3 +1,10 @@
+## 0.5.1 (2024-05-21)
+
+
+### Bug Fixes
+
+* **github-actions:** use authorized dependency 087f892
+
 ## 0.5.0 (2024-05-21)
 
 
