@@ -1,3 +1,10 @@
+## 0.5.0 (2024-05-21)
+
+
+### Features
+
+* add custom URL for the iac_git_url tag to solve git mirroring inconsistencies 03384b8
+
 ## 0.4.5 (2024-05-21)
 
 
