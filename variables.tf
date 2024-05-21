@@ -42,6 +42,13 @@ variable "git_remote_name" {
   type        = string
 }
 
+variable "custom_iac_git_url" {
+  default     = null
+  description = "Optional custom iac git url"
+  nullable    = true
+  type        = string
+}
+
 variable "managed_by" {
   default     = "claranet"
   description = "Who is managing the resources"
