@@ -1,3 +1,21 @@
+## 0.4.5 (2024-05-21)
+
+
+### Bug Fixes
+
+* add try when fetching git dir c56ec11
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.30.1 228cbbd
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.31.0 a7f647d
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.31.1 2a13757
+* **deps:** update dependency pre-commit to v3.7.1 449740c
+* **deps:** update dependency tflint to v0.51.0 05e4364
+* **deps:** update dependency tflint to v0.51.1 509c3b6
+* **deps:** update dependency tfsec to v1.28.6 bbee421
+
 ## 0.4.4 (2024-04-17)
 
 
