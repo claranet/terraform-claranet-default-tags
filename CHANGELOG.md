@@ -1,3 +1,10 @@
+## 0.5.2 (2024-05-21)
+
+
+### Bug Fixes
+
+* **github-actions:** release notes formating 380b748
+
 ## 0.5.1 (2024-05-21)
 
 
