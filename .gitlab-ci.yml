@@ -1,6 +1,3 @@
-variables:
-  SHARED_RUNNER_TAG: ops4ops-claranet
-
 include:
   - project: claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates
     ref: v0.33.2
