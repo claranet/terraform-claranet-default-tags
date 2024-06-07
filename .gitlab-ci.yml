@@ -1,4 +1,4 @@
 include:
   - project: claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates
-    ref: v0.35.1
+    ref: v0.35.2
     file: terraform_module.yml
