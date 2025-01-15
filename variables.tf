@@ -25,12 +25,6 @@ variable "synapps_status" {
   }
 }
 
-variable "deployed_by" {
-  default     = "terraform"
-  description = "How the resources are managed"
-  type        = string
-}
-
 variable "environment" {
   description = "What is the environment of the resources"
   type        = string
