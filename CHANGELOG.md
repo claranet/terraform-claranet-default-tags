@@ -1,3 +1,102 @@
+## 0.6.0 (2025-01-16)
+
+### Features
+
+* define deployed_by to opentofu e3b4dc5
+
+### Continuous Integration
+
+* add Slack notification on release a76a3a0
+* **renovate:** use upstream config d9f244c
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v4 a17c23c
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.32.0 c45b226
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.33.0 bae2e44
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.33.1 acb3dda
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.33.2 315e67d
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.33.4 d16d38a
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.34.0 3fa25a3
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.34.1 b597065
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.35.1 5b90872
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.35.2 0734c28
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.36.0 53464e8
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.36.1 c18b5b7
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.36.2 af5c758
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.37.0 607e454
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.37.1 071eb02
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.37.2 0d29ac9
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.37.3 3a4b74b
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.37.4 87bdeba
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.37.5 5ade304
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.38.0 2012b03
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.39.0 0c9a202
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.39.1 9efa5ee
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.39.3 54f96dc
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.39.5 b410d1d
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.39.6 9a85043
+* **deps:** update dependency opentofu to v1.7.2 4c04f37
+* **deps:** update dependency opentofu to v1.7.3 245aebc
+* **deps:** update dependency opentofu to v1.8.0 3bbc7cd
+* **deps:** update dependency opentofu to v1.8.1 bacb863
+* **deps:** update dependency opentofu to v1.8.2 26a6d23
+* **deps:** update dependency opentofu to v1.8.3 ca70349
+* **deps:** update dependency opentofu to v1.8.4 582ca28
+* **deps:** update dependency opentofu to v1.8.5 b72f0c3
+* **deps:** update dependency opentofu to v1.8.6 0598c1b
+* **deps:** update dependency opentofu to v1.8.7 01163cc
+* **deps:** update dependency opentofu to v1.9.0 6e0190b
+* **deps:** update dependency pre-commit to v3.8.0 eb4db6c
+* **deps:** update dependency pre-commit to v4 38d5c5e
+* **deps:** update dependency pre-commit to v4.0.1 28c8b53
+* **deps:** update dependency terraform-docs to v0.17.0 7c5d99f
+* **deps:** update dependency terraform-docs to v0.18.0 9ae5992
+* **deps:** update dependency terraform-docs to v0.19.0 f673023
+* **deps:** update dependency tflint to v0.51.2 876db5f
+* **deps:** update dependency tflint to v0.52.0 89e0025
+* **deps:** update dependency tflint to v0.53.0 44b5b62
+* **deps:** update dependency tflint to v0.54.0 003adca
+* **deps:** update dependency tflint to v0.55.0 e881d0c
+* **deps:** update dependency trivy to v0.52.0 250183e
+* **deps:** update dependency trivy to v0.52.1 69bc7c6
+* **deps:** update dependency trivy to v0.52.2 62ed66d
+* **deps:** update dependency trivy to v0.53.0 f708b5f
+* **deps:** update dependency trivy to v0.54.0 716b3da
+* **deps:** update dependency trivy to v0.54.1 7aefcb2
+* **deps:** update dependency trivy to v0.55.0 4ef16bf
+* **deps:** update dependency trivy to v0.55.1 22e1869
+* **deps:** update dependency trivy to v0.55.2 0ceae92
+* **deps:** update dependency trivy to v0.56.0 687b2b5
+* **deps:** update dependency trivy to v0.56.1 1cded9c
+* **deps:** update dependency trivy to v0.56.2 1d173e1
+* **deps:** update dependency trivy to v0.57.0 162fb21
+* **deps:** update dependency trivy to v0.57.1 609591b
+* **deps:** update dependency trivy to v0.58.0 d92253c
+* **deps:** update dependency trivy to v0.58.1 37024c6
+* **deps:** update dependency trivy to v0.58.2 7c3b36a
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.92.0 f113574
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.92.1 1823cec
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.92.2 bbf5b48
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.92.3 ed3ef24
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.93.0 e3f5bcf
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.94.0 31f9e2d
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.94.1 2abeee5
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.94.2 7961713
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.94.3 4b1afd1
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.95.0 606e292
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.96.0 53d0242
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.96.1 7cd1efd
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.96.2 70c1478
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.96.3 83eaa2e
+* **deps:** update pre-commit hook compilerla/conventional-pre-commit to v3.3.0 1a27ecf
+* **deps:** update pre-commit hook compilerla/conventional-pre-commit to v3.4.0 b3aca58
+* **deps:** update pre-commit hook compilerla/conventional-pre-commit to v3.5.0 c65886d
+* **deps:** update pre-commit hook compilerla/conventional-pre-commit to v3.6.0 2f4b03c
+* **deps:** update pre-commit hook terraform-docs/terraform-docs to v0.18.0 3f8eca4
+* **deps:** update pre-commit hook terraform-docs/terraform-docs to v0.19.0 0e1ed2f
+* replace tfsec by trivy 01a2e20
+
 ## 0.5.2 (2024-05-21)
 
 
