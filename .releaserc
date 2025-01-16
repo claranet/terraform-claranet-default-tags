@@ -111,7 +111,7 @@
         "assets": [
           "CHANGELOG.md"
         ],
-				"message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ],
     [
@@ -121,6 +121,34 @@
         "assets": [
           "CHANGELOG.md"
         ]
+      }
+    ],
+    [
+      "semantic-release-slack-bot",
+      {
+        "packageName": "Claranet default tags opentofu/terraform module",
+        "notifyOnSuccess": true,
+        "notifyOnFail": true,
+        "markdownReleaseNotes": true,
+        "onSuccessTemplate": {
+          "text": "Claranet default tags opentofu/terraform module release",
+          "blocks": [
+            {
+              "type": "section",
+              "text": {
+                "type": "mrkdwn",
+                "text": ":pencil: <$repo_url|Claranet default tags opentofu/terraform module> *$npm_package_version* released :dancing-tofu:"
+              }
+            },
+            {
+              "type": "section",
+              "text": {
+                "type": "mrkdwn",
+                "text": "$release_notes"
+              }
+            }
+          ]
+        }
       }
     ]
   ]
