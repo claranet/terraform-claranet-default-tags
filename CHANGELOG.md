@@ -1,3 +1,36 @@
+## 0.7.0 (2025-05-15)
+
+### Features
+
+* Add more relpaths 66ba87f
+
+### Miscellaneous Chores
+
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.40.0 44fcb56
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.40.1 29ede3e
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.40.2 cb45fff
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.40.3 5de98bb
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.40.4 be027fd
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.41.2 5a7d6b9
+* **deps:** update dependency pre-commit to v4.1.0 9f6b472
+* **deps:** update dependency pre-commit to v4.2.0 8cbf8ad
+* **deps:** update dependency terraform-docs to v0.20.0 75ec384
+* **deps:** update dependency tflint to v0.55.1 96568f1
+* **deps:** update dependency tflint to v0.56.0 f8b50ca
+* **deps:** update dependency trivy to v0.59.0 f36de55
+* **deps:** update dependency trivy to v0.59.1 4590225
+* **deps:** update dependency trivy to v0.60.0 d6fd0ed
+* **deps:** update dependency trivy to v0.61.0 506a644
+* **deps:** update dependency trivy to v0.61.1 ab84fd4
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.97.0 67b24e4
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.97.1 c9051bc
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.97.2 378f15f
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.97.3 75ec1f0
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.97.4 c575dc2
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.98.0 3246d88
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.0 f9851ea
+* **deps:** update pre-commit hook terraform-docs/terraform-docs to v0.20.0 a58cb66
+
 ## 0.6.0 (2025-01-16)
 
 ### Features
