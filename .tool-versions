@@ -1,4 +1,4 @@
-opentofu       1.10.3
+opentofu       1.10.4
 pre-commit     4.2.0
 terraform-docs 0.20.0
 tflint         0.58.1
