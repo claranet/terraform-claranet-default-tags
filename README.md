@@ -109,7 +109,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_application_stack_name"></a> [application\_stack\_name](#input\_application\_stack\_name) | Application stack name | `string` | `null` | no |
 | <a name="input_custom_iac_git_url"></a> [custom\_iac\_git\_url](#input\_custom\_iac\_git\_url) | Optional custom iac git url | `string` | `null` | no |
-| <a name="input_deployed_by"></a> [deployed\_by](#input\_deployed\_by) | How the resources are managed | `string` | `"terraform"` | no |
+| <a name="input_deployed_by"></a> [deployed\_by](#input\_deployed\_by) | How the resources are managed | `string` | `"opentofu"` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | What is the environment of the resources | `string` | n/a | yes |
 | <a name="input_git_remote_name"></a> [git\_remote\_name](#input\_git\_remote\_name) | Git remote name | `string` | `"origin"` | no |
 | <a name="input_managed_by"></a> [managed\_by](#input\_managed\_by) | Who is managing the resources | `string` | `"claranet"` | no |
