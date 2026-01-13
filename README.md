@@ -113,6 +113,7 @@ No modules.
 | <a name="input_environment"></a> [environment](#input\_environment) | What is the environment of the resources | `string` | n/a | yes |
 | <a name="input_git_remote_name"></a> [git\_remote\_name](#input\_git\_remote\_name) | Git remote name | `string` | `"origin"` | no |
 | <a name="input_managed_by"></a> [managed\_by](#input\_managed\_by) | Who is managing the resources | `string` | `"claranet"` | no |
+| <a name="input_monitored_by_claranet"></a> [monitored\_by\_claranet](#input\_monitored\_by\_claranet) | Whether the resources are monitored by Claranet (tag `claranet_monitored:true`) | `bool` | `true` | no |
 | <a name="input_owner"></a> [owner](#input\_owner) | Who is owner of the resources | `string` | `null` | no |
 | <a name="input_stack"></a> [stack](#input\_stack) | Terraform stack name | `string` | `null` | no |
 | <a name="input_supervised_by"></a> [supervised\_by](#input\_supervised\_by) | Who is supervising the resources | `string` | `"claranet"` | no |

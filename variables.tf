@@ -50,6 +50,12 @@ variable "managed_by" {
   type        = string
 }
 
+variable "monitored_by_claranet" {
+  default     = true
+  description = "Whether the resources are monitored by Claranet (tag `claranet_monitored:true`)"
+  type        = bool
+}
+
 variable "owner" {
   default     = null
   description = "Who is owner of the resources"

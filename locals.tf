@@ -34,6 +34,7 @@ locals {
 
   generated_tags = {
     application_stack_name = var.application_stack_name
+    claranet_monitored     = var.monitored_by_claranet ? "true" : null
     claranet_project_id    = var.synapps_project_id
     claranet_status        = var.synapps_status
     deployed_by            = var.deployed_by
