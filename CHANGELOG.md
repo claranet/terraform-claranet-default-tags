@@ -1,3 +1,13 @@
+## 0.8.0 (2026-01-13)
+
+### Features
+
+* claranet_monitored tag b5ea1de
+
+### Miscellaneous Chores
+
+* **deps:** update dependency terraform-docs to v0.21.0 5857377
+
 ## 0.7.1 (2026-01-13)
 
 ### Bug Fixes
