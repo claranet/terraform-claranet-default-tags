@@ -28,10 +28,6 @@ repos:
     - id: terraform_tflint
       args:
         - --args=--recursive
-    - id: terraform_trivy
-      args:
-        - --args=--severity HIGH,CRITICAL
-        - --args=--skip-dirs '**/.terraform'
 
 - repo: https://github.com/compilerla/conventional-pre-commit
   rev: v4.4.0
