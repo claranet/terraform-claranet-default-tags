@@ -1,3 +1,23 @@
+## 0.8.1 (2026-03-23)
+
+### Bug Fixes
+
+* drop trivy e66c738
+
+### Miscellaneous Chores
+
+* **deps:** roll back dependency trivy to 0.69.3 696a69f
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.48.0 6afaebe
+* **deps:** update dependency opentofu to v1.11.4 f26e59a
+* **deps:** update dependency opentofu to v1.11.5 1bfae93
+* **deps:** update dependency tflint to v0.61.0 4499489
+* **deps:** update dependency trivy to v0.69.0 2dbce5a
+* **deps:** update dependency trivy to v0.69.1 6aba16f
+* **deps:** update dependency trivy to v0.69.2 8af8b2b
+* **deps:** update dependency trivy to v0.69.3 798a67b
+* **deps:** update dependency trivy to v0.69.4 aeb2e55
+* **deps:** update pre-commit hook compilerla/conventional-pre-commit to v4.4.0 f0acd9a
+
 ## 0.8.0 (2026-01-13)
 
 ### Features
