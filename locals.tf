@@ -50,4 +50,8 @@ locals {
   compacted_tags = {
     for k, v in local.generated_tags : k => v if v != null
   }
+
+  compacted_tags_list = [
+    for k, v in local.compacted_tags : "${k}=${v}"
+  ]
 }
