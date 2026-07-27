@@ -48,7 +48,7 @@ locals {
   }
 
   compacted_tags = {
-    for k, v in local.generated_tags : k => v if v != null
+    for k, v in local.generated_tags : k => v if v != null && v != ""
   }
 
   compacted_tags_list = [
