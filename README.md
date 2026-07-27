@@ -79,18 +79,38 @@ module "rg" {
 }
 ```
 
+### Scaleway
+
+Scaleway resources expect tags as a flat list of strings instead of a map.
+Set `tags_as_list = true` to also get the `default_tags_list` output, which
+transforms each generated tag into a `key=value` string:
+
+```hcl
+module "default_tags" {
+  source = "github.com/claranet/claranet-terraform-default-tags"
+
+  environment  = var.environment
+  tags_as_list = true
+}
+
+resource "scaleway_instance_server" "this" {
+  # ...
+  tags = module.default_tags.default_tags_list
+}
+```
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1 |
 | <a name="requirement_git"></a> [git](#requirement\_git) | >= 2023.1.20 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_git"></a> [git](#provider\_git) | >= 2023.1.20 |
 
 ## Modules
@@ -100,13 +120,13 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [git_remotes.current](https://registry.terraform.io/providers/metio/git/latest/docs/data-sources/remotes) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_application_stack_name"></a> [application\_stack\_name](#input\_application\_stack\_name) | Application stack name | `string` | `null` | no |
 | <a name="input_custom_iac_git_url"></a> [custom\_iac\_git\_url](#input\_custom\_iac\_git\_url) | Optional custom iac git url | `string` | `null` | no |
 | <a name="input_deployed_by"></a> [deployed\_by](#input\_deployed\_by) | How the resources are managed | `string` | `"opentofu"` | no |
@@ -119,11 +139,12 @@ No modules.
 | <a name="input_supervised_by"></a> [supervised\_by](#input\_supervised\_by) | Who is supervising the resources | `string` | `"claranet"` | no |
 | <a name="input_synapps_project_id"></a> [synapps\_project\_id](#input\_synapps\_project\_id) | Project ID as defined in Claranet SynApps CMDB to set the claranet\_project\_id tag | `string` | `null` | no |
 | <a name="input_synapps_status"></a> [synapps\_status](#input\_synapps\_status) | Resource status as defined in Claranet SynApps CMDB to override the status field | `string` | `null` | no |
+| <a name="input_tags_as_list"></a> [tags\_as\_list](#input\_tags\_as\_list) | Whether to also output tags as a list of `key=value` strings (e.g. for providers like Scaleway which expect tags as a flat list instead of a map) | `bool` | `false` | no |
 
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_default_tags"></a> [default\_tags](#output\_default\_tags) | Generated default tags. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 

@@ -75,3 +75,9 @@ variable "supervised_by" {
   description = "Who is supervising the resources"
   type        = string
 }
+
+variable "tags_as_list" {
+  default     = false
+  description = "Whether to also output tags as a list of `key=value` strings (e.g. for providers like Scaleway which expect tags as a flat list instead of a map)"
+  type        = bool
+}

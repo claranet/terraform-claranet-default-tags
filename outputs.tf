@@ -1,4 +1,4 @@
 output "default_tags" {
-  value       = local.compacted_tags
+  value       = local.output_default_tags
   description = "Generated default tags."
 }
