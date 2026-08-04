@@ -1,3 +1,42 @@
+## 0.9.0 (2026-08-04)
+
+### Features
+
+* add tags_as_list var to output tags as a list ec0c35f
+
+### Bug Fixes
+
+* exclude tag with empy value 69a4af6
+
+### Miscellaneous Chores
+
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.48.1 fae7f62
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.49.0 b315bd0
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.50.0 24d4083
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.51.0 1380a87
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.51.1 8fc02ee
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.51.2 cd3aa1e
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.51.3 12c8c1d
+* **deps:** update dependency claranet/guildes/pipeline/terraform-templates/terraform-gitlab-ci-templates to v0.51.4 333b64a
+* **deps:** update dependency opentofu to v1.11.6 ffe3a44
+* **deps:** update dependency opentofu to v1.11.7 fce3841
+* **deps:** update dependency opentofu to v1.11.8 66c7707
+* **deps:** update dependency opentofu to v1.12.0 4eb9e7b
+* **deps:** update dependency opentofu to v1.12.1 6cf8dfa
+* **deps:** update dependency opentofu to v1.12.2 9be99f7
+* **deps:** update dependency opentofu to v1.12.3 ac6f0f1
+* **deps:** update dependency pre-commit to v4.6.0 b50e348
+* **deps:** update dependency terraform-docs to v0.24.0 f180235
+* **deps:** update dependency tflint to v0.62.0 c2f0a00
+* **deps:** update dependency tflint to v0.62.1 b617847
+* **deps:** update dependency tflint to v0.63.1 8ab9c9f
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.106.0 9fb4767
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.107.0 e19316e
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.108.0 6d89b72
+* **deps:** update pre-commit hook terraform-docs/terraform-docs to v0.22.0 3ce172c
+* **deps:** update pre-commit hook terraform-docs/terraform-docs to v0.23.0 09805c6
+* **deps:** update pre-commit hook terraform-docs/terraform-docs to v0.24.0 ff16a2c
+
 ## 0.8.1 (2026-03-23)
 
 ### Bug Fixes
