@@ -1,7 +1,8 @@
 locals {
   url_regex = "(?P<protocol>https?:\\/\\/|git@)(?P<auth>[-a-zA-Z0-9_]+:[-a-zA-Z0-9%._\\+~#=]+@)?(?P<domain>[-a-zA-Z0-9._]{1,256}\\.[a-zA-Z0-9()]{1,6})[:/](?P<path>[-a-zA-Z0-9()@:%_\\+~#?&//=]*)(?P<suffix>\\.git)?"
 
-  git_remotes_urls = try(data.git_remotes.current.remotes[var.git_remote_name].urls, [])
+  git_remotes_urls   = try(data.git_remotes.current.remotes[var.git_remote_name].urls, [])
+  git_current_branch = try(data.git_repository.main.branch, "")
   iac_git_url = var.custom_iac_git_url != null ? var.custom_iac_git_url : join(
     ",",
     [
@@ -41,6 +42,7 @@ locals {
     env                    = var.environment
     iac_base_path          = local.iac_base_path
     iac_git_url            = local.iac_git_url
+    iac_branch             = local.git_current_branch
     managed_by             = var.managed_by
     owner                  = var.owner
     stack                  = var.stack
