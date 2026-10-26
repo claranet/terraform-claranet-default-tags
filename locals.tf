@@ -42,7 +42,6 @@ locals {
     env                    = var.environment
     iac_base_path          = local.iac_base_path
     iac_git_url            = local.iac_git_url
-    iac_branch             = local.git_current_branch
     managed_by             = var.managed_by
     owner                  = var.owner
     stack                  = var.stack
@@ -56,4 +55,12 @@ locals {
   compacted_tags_list = [
     for k, v in local.compacted_tags : "${k}=${v}"
   ]
+
+  extra_tags = {
+    iac_current_branch = local.git_current_branch
+  }
+
+  compacted_extra_tags = {
+    for k, v in local.extra_tags : k => v if v != null && v != ""
+  }
 }
